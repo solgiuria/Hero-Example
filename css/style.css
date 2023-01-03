@@ -1,0 +1,200 @@
+ @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Kanit:wght@300;400;500;600&display=swap'); 
+
+ :root{
+    --background-color: rgb(243, 239, 239);
+ }
+ :root{
+    --font-color: rgb(22, 21, 19);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Aldrich', sans-serif;   
+}
+/* aqui comienzo header */
+
+header{
+    background-color: var(--background-color);  
+}
+
+header img{
+   min-width: 150px;
+}
+.header-child{
+    margin:0 auto;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: var(--background-color);
+    
+}
+.header-child nav{
+    margin: 30px 0px;
+}
+nav{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav a{
+    text-decoration: none;
+    color: var(--font-color);
+    transition: all  ease-in-out;
+}
+nav a:hover{
+    color: rgb(255, 115, 0);
+    text-decoration: underline var(--font-color);
+}
+/*aqui comienza el hero*/
+
+.hero{
+    height: 100vh;
+    background-color: var(--background-color);
+    
+    
+}
+/*este es el div que define margenes y padre de dos*/
+.sec-child{
+    margin: 0 auto;
+    width: 68%;
+    height: 77vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items:center;
+    justify-content: space-around;  
+}
+
+/*hijo1: div con text y botones*/
+.text{
+    height: 430px;
+    margin-top: 57px;
+}
+
+.text h1, .asterisco{
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+.asterisco{
+    display: flex; 
+}
+
+.asterisco img{
+    margin: 0px 15px;
+}
+
+.text p{
+    font-size:24px;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+span{
+    text-decoration: line-through;
+}
+
+/*hijo2: div img*/
+.img img{
+    max-width: 550px;  
+}
+
+
+
+/*buttons*/
+
+button a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.light-but{
+    background-color: transparent;
+    padding: 15px 33px;
+    cursor: pointer;cursor: pointer;
+    margin-left: -10px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    text-decoration: none;
+}
+
+.light-but:hover{
+    color: var(--font-color);
+    text-decoration: underline;    
+}
+
+
+.dark-but{
+    background: var(--font-color);
+    padding: 16px 33px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dark-but:hover{   
+    text-decoration: underline;
+}
+
+
+
+.nav-but{
+    padding: 8px 30px;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+}
+
+.nav-but:hover{
+    background-color: var(--font-color);
+    color: white;
+    text-decoration: underline;
+    
+}
+
+
+/*div con rotacion*/
+.rotated-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--font-color);
+    position: relative;
+    transform-origin: top right;
+    transform: skewY(-3deg);
+    position:relative;
+    top: -5%;
+   
+}
+
+/* .rotated-div::after{
+    position: absolute;
+    content: ;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-4deg);
+} */
+
+
+
+.rotated-div p{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    padding: 35px 0px;
+    
+}
